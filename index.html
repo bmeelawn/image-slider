@@ -5,40 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
-    <style>
-        html {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-        }
-        .container-fluid {
-            margin: auto;
-            width: 1000px;
-            height: 600px;
-        }
-        
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <main>
-        <div class="container-fluid">
-            <div class="img-box">
-                <img src="images/img_2.jpg" alt="">
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(./images/img_1.jpg);">
+                <div class="content">
+                    <div class="name">Switzerland</div>
+                    <div class="des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio itaque iure
+                        accusantium eum sunt</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/img_2.jpg);">
+                <div class="content">
+                    <div class="name">Finland</div>
+                    <div class="des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio itaque iure
+                        accusantium eum sunt</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/img_3.jpeg);">
+                <div class="content">
+                    <div class="name">Iceland</div>
+                    <div class="des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio itaque iure
+                        accusantium eum sunt</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/img_4.jpg);">
+                <div class="content">
+                    <div class="name">England</div>
+                    <div class="des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio itaque iure
+                        accusantium eum sunt</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/img_5.jpeg);">
+                <div class="content">
+                    <div class="name">Spain</div>
+                    <div class="des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio itaque iure
+                        accusantium eum sunt</div>
+                    <button>See More</button>
+                </div>
             </div>
         </div>
-    </main>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
